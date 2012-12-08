@@ -90,5 +90,13 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="Crouton" value="Crouton.makeText($className$.this, &quot;$text$&quot;, Style.$style$).show();" description="Creates a new Crouton" toReformat="false" toShortenFQNames="true">
+    <variable name="className" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="style" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
 
