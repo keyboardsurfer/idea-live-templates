@@ -16,13 +16,7 @@
     <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
     <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="JAVA_STRING" value="true" />
-      <option name="JAVA_COMMENT" value="true" />
-      <option name="JAVA_DECLARATION" value="true" />
-      <option name="COMPLETION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
-      <option name="JAVA_EXPRESSION" value="true" />
-      <option name="JAVA_CODE" value="true" />
     </context>
   </template>
   <template name="psf" value="private static final $name$;" description="private static final variable with type and member" toReformat="true" toShortenFQNames="true">
