@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Android">
+  <template name="LogTag" value="private static String TAG = $className$.class.getSimpleName();" description="A static logtag with your current classname" toReformat="true" toShortenFQNames="true">
+    <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="Parcelable" value="  @Override&#10;  public int describeContents() {&#10;    return 0;&#10;  }&#10;&#10;  @Override&#10;  public void writeToParcel(Parcel dest, int flags) {&#10;&#10;  }&#10;&#10;   &#10;    public static final Parcelable.Creator&lt;$className$&gt; CREATOR = new Parcelable.Creator&lt;$className$&gt;() {&#10;         public $className$ createFromParcel(Parcel in) {&#10;             return new $className$(in);&#10;         }&#10;&#10;         public $className$[] newArray(int size) {&#10;             return new $className$[size];&#10;         }&#10;     };&#10;     &#10;     private $className$(Parcel in) {&#10;    &#10;     }" description="Create a parcelable block for your current class" toReformat="true" toShortenFQNames="true">
+    <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="Toast" value="Toast.makeText($className$.this, &quot;$text$&quot;, Toast.LENGTH_SHORT).show();" description="Create a new toast" toReformat="true" toShortenFQNames="true">
+    <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STRING" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="COMPLETION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="psf" value="private static final $name$;" description="private static final variable with type and member" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="psfS" value="private static final String $name$;" description="private static final String" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="rouiT" value="getActivity().runOnUiThread(new Runnable() {&#10;  @Override&#10;  public void run() {&#10;    $cursor$&#10;  }&#10;});" description="runOnUIThread" toReformat="true" toShortenFQNames="true">
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="lh" value="android:layout_height=”$height$”" description="android:layout_height=&quot;&quot;" toReformat="false" toShortenFQNames="true">
+    <variable name="height" expression="" defaultValue="wrap_content" alwaysStopAt="true" />
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="lw" value="android:layout_width=”$width$”" description="android:layout_width=&quot;&quot;" toReformat="false" toShortenFQNames="true">
+    <variable name="width" expression="" defaultValue="wrap_content" alwaysStopAt="true" />
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="fbc" value="($cast$) findViewById($resId$);" description="findViewById with cast" toReformat="false" toShortenFQNames="true">
+    <variable name="cast" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="resId" expression="" defaultValue="R.id" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="lhw" value="android:layout_height=”wrap_content”" description="android:layout_height=&quot;wrap_content&quot;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="lhm" value="android:layout_height=”match_parent”" description="android:layout_height=&quot;match_parent&quot;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="lwm" value="android:layout_width=”match_parent”" description="android:layout_width=&quot;match_parent&quot;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="lww" value="android:layout_width=”wrap_content”" description="android:layout_width=&quot;wrap_content&quot;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="foreach" value="for ($i$ : $data$) {&#10;  $cursor$&#10;}" description="Create a for each loop" toReformat="false" toShortenFQNames="true">
+    <variable name="i" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="data" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
+
