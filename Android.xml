@@ -37,14 +37,14 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="lh" value="android:layout_height=”$height$”" description="android:layout_height=&quot;&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="lh" value="android:layout_height=&quot;$height$&quot;" description="android:layout_height=&quot;&quot;" toReformat="false" toShortenFQNames="true">
     <variable name="height" expression="" defaultValue="wrap_content" alwaysStopAt="true" />
     <context>
       <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="lw" value="android:layout_width=”$width$”" description="android:layout_width=&quot;&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="lw" value="android:layout_width=&quot;$width$&quot;" description="android:layout_width=&quot;&quot;" toReformat="false" toShortenFQNames="true">
     <variable name="width" expression="" defaultValue="wrap_content" alwaysStopAt="true" />
     <context>
       <option name="XSL_TEXT" value="true" />
@@ -58,25 +58,25 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="lhw" value="android:layout_height=”wrap_content”" description="android:layout_height=&quot;wrap_content&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="lhw" value="android:layout_height=&quot;wrap_content&quot;" description="android:layout_height=&quot;wrap_content&quot;" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="lhm" value="android:layout_height=”match_parent”" description="android:layout_height=&quot;match_parent&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="lhm" value="android:layout_height=&quot;match_parent&quot;" description="android:layout_height=&quot;match_parent&quot;" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="lwm" value="android:layout_width=”match_parent”" description="android:layout_width=&quot;match_parent&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="lwm" value="android:layout_width=&quot;match_parent&quot;" description="android:layout_width=&quot;match_parent&quot;" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="lww" value="android:layout_width=”wrap_content”" description="android:layout_width=&quot;wrap_content&quot;" toReformat="false" toShortenFQNames="true">
+  <template name="lww" value="android:layout_width=&quot;wrap_content&quot;" description="android:layout_width=&quot;wrap_content&quot;" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
@@ -94,13 +94,6 @@
     <variable name="className" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="style" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_STATEMENT" value="true" />
-    </context>
-  </template>
-  <template name="Sfmt" value="String.format($string$, $params$);" description="String format" toReformat="false" toShortenFQNames="true">
-    <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_STATEMENT" value="true" />
     </context>
