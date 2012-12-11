@@ -98,5 +98,32 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="noop" value="/* no-op */" description="indicate that a method does not have any operations" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="clink" value="{@link $classToLink$}" description="link from within javadoc" toReformat="false" toShortenFQNames="true">
+    <variable name="classToLink" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_COMMENT" value="true" />
+    </context>
+  </template>
+  <template name="ctrue" value="&lt;code&gt;true&lt;/code&gt;" description="puts true in a comment section" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_COMMENT" value="true" />
+    </context>
+  </template>
+  <template name="cfalse" value="&lt;code&gt;false&lt;/code&gt;" description="puts false in a comment section" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_COMMENT" value="true" />
+    </context>
+  </template>
+  <template name="sbc" value="///////////////////////////////////////////////////////////////////////////&#10;// $blockName$&#10;///////////////////////////////////////////////////////////////////////////" description="block comment for structuring code" toReformat="false" toShortenFQNames="true">
+    <variable name="blockName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
 </templateSet>
 
