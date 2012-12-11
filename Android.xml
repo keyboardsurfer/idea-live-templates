@@ -125,7 +125,7 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="Sfmt" value="String.format($string$, $params$);" description="String format" toReformat="false" toShortenFQNames="true">
+  <template name="Sfmt" value="String.format(&quot;$string$&quot;, $params$);" description="String format" toReformat="false" toShortenFQNames="true">
     <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
