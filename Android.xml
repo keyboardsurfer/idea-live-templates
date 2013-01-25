@@ -129,14 +129,21 @@
     <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
     </context>
   </template>
   <template name="appns" value="xmlns:app=&quot;http://schemas.android.com/apk/res/$mypacakgename$&quot;" description="adds application namespace" toReformat="false" toShortenFQNames="true">
     <variable name="mypacakgename" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="XML" value="true" />
+      <option name="XSL_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ccode" value="&lt;code&gt;$code$&lt;/code&gt;" description="code tag for javadoc" toReformat="false" toShortenFQNames="true">
+    <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_COMMENT" value="true" />
     </context>
   </template>
 </templateSet>
