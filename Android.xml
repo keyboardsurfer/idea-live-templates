@@ -6,7 +6,7 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="Parcelable" value="protected $className$(Parcel in) {&#10;  &#10;}&#10;  &#10;@Override&#10;public int describeContents() {&#10;  return 0;&#10;}&#10;&#10;@Override&#10;public void writeToParcel(Parcel dest, int flags) {&#10;  &#10;}&#10;&#10;   &#10;public static final Parcelable.Creator&lt;$className$&gt; CREATOR = new Parcelable.Creator&lt;$className$&gt;() {&#10;     public $className$ createFromParcel(Parcel in) {&#10;       return new $className$(in);&#10;     }&#10;&#10;     public $className$[] newArray(int size) {&#10;       return new $className$[size];&#10;     }&#10;};   " description="Create a parcelable block for your current class" toReformat="true" toShortenFQNames="true">
+  <template name="Parcelable" value="protected $className$(Parcel in) {&#10;  &#10;}&#10;  &#10;@Override&#10;public int describeContents() {&#10;  return 0;&#10;}&#10;&#10;@Override&#10;public void writeToParcel(Parcel dest, int flags) {&#10;  &#10;}&#10;&#10;   &#10;public static final Parcelable.Creator&lt;$className$&gt; CREATOR = new Parcelable.Creator&lt;$className$&gt;() {&#10;  @Override&#10;  public $className$ createFromParcel(Parcel in) {&#10;    return new $className$(in);&#10;  }&#10;&#10;  @Override&#10;  public $className$[] newArray(int size) {&#10;    return new $className$[size];&#10;  }&#10;};" description="Create a parcelable block for your current class" toReformat="true" toShortenFQNames="true">
     <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_DECLARATION" value="true" />
