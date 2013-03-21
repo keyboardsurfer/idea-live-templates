@@ -6,7 +6,7 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="Parcelable" value="  @Override&#10;  public int describeContents() {&#10;    return 0;&#10;  }&#10;&#10;  @Override&#10;  public void writeToParcel(Parcel dest, int flags) {&#10;&#10;  }&#10;&#10;   &#10;    public static final Parcelable.Creator&lt;$className$&gt; CREATOR = new Parcelable.Creator&lt;$className$&gt;() {&#10;         public $className$ createFromParcel(Parcel in) {&#10;             return new $className$(in);&#10;         }&#10;&#10;         public $className$[] newArray(int size) {&#10;             return new $className$[size];&#10;         }&#10;     };&#10;     &#10;     private $className$(Parcel in) {&#10;    &#10;     }" description="Create a parcelable block for your current class" toReformat="true" toShortenFQNames="true">
+  <template name="Parcelable" value="protected $className$(Parcel in) {&#10;  &#10;}&#10;  &#10;@Override&#10;public int describeContents() {&#10;  return 0;&#10;}&#10;&#10;@Override&#10;public void writeToParcel(Parcel dest, int flags) {&#10;  &#10;}&#10;&#10;   &#10;public static final Parcelable.Creator&lt;$className$&gt; CREATOR = new Parcelable.Creator&lt;$className$&gt;() {&#10;     public $className$ createFromParcel(Parcel in) {&#10;       return new $className$(in);&#10;     }&#10;&#10;     public $className$[] newArray(int size) {&#10;       return new $className$[size];&#10;     }&#10;};   " description="Create a parcelable block for your current class" toReformat="true" toShortenFQNames="true">
     <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_DECLARATION" value="true" />
@@ -40,15 +40,15 @@
   <template name="lh" value="android:layout_height=&quot;$height$&quot;" description="android:layout_height=&quot;&quot;" toReformat="false" toShortenFQNames="true">
     <variable name="height" expression="" defaultValue="wrap_content" alwaysStopAt="true" />
     <context>
-      <option name="XML" value="true" />
       <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
     </context>
   </template>
   <template name="lw" value="android:layout_width=&quot;$width$&quot;" description="android:layout_width=&quot;&quot;" toReformat="false" toShortenFQNames="true">
     <variable name="width" expression="" defaultValue="wrap_content" alwaysStopAt="true" />
     <context>
-      <option name="XML" value="true" />
       <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
     </context>
   </template>
   <template name="fbc" value="($cast$) findViewById($resId$);" description="findViewById with cast" toReformat="false" toShortenFQNames="true">
@@ -60,26 +60,26 @@
   </template>
   <template name="lhw" value="android:layout_height=&quot;wrap_content&quot;" description="android:layout_height=&quot;wrap_content&quot;" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="XML" value="true" />
       <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
     </context>
   </template>
   <template name="lhm" value="android:layout_height=&quot;match_parent&quot;" description="android:layout_height=&quot;match_parent&quot;" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="XML" value="true" />
       <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
     </context>
   </template>
   <template name="lwm" value="android:layout_width=&quot;match_parent&quot;" description="android:layout_width=&quot;match_parent&quot;" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="XML" value="true" />
       <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
     </context>
   </template>
   <template name="lww" value="android:layout_width=&quot;wrap_content&quot;" description="android:layout_width=&quot;wrap_content&quot;" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="XML" value="true" />
       <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
     </context>
   </template>
   <template name="foreach" value="for ($i$ : $data$) {&#10;  $cursor$&#10;}" description="Create a for each loop" toReformat="false" toShortenFQNames="true">
@@ -129,15 +129,15 @@
     <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="JAVA_STATEMENT" value="true" />
       <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
   <template name="appns" value="xmlns:app=&quot;http://schemas.android.com/apk/res/$mypacakgename$&quot;" description="adds application namespace" toReformat="false" toShortenFQNames="true">
     <variable name="mypacakgename" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="XML" value="true" />
       <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
     </context>
   </template>
   <template name="ccode" value="&lt;code&gt;$code$&lt;/code&gt;" description="code tag for javadoc" toReformat="false" toShortenFQNames="true">
@@ -199,26 +199,26 @@
     <variable name="date" expression="date()" defaultValue="" alwaysStopAt="false" />
     <variable name="todo" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="JAVA_STATEMENT" value="true" />
-      <option name="JAVA_CODE" value="true" />
-      <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_COMMENT" value="true" />
       <option name="COMPLETION" value="true" />
-      <option name="JAVA_STRING" value="true" />
       <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
     </context>
   </template>
   <template name="fixme" value="//FIXME $date$ $todo$" description="adds //FIXME" toReformat="false" toShortenFQNames="true">
     <variable name="date" expression="date()" defaultValue="" alwaysStopAt="false" />
     <variable name="todo" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="JAVA_STATEMENT" value="true" />
-      <option name="JAVA_CODE" value="true" />
-      <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_COMMENT" value="true" />
       <option name="COMPLETION" value="true" />
-      <option name="JAVA_STRING" value="true" />
       <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
     </context>
   </template>
 </templateSet>
