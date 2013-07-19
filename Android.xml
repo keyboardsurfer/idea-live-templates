@@ -1099,5 +1099,39 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
+  <template name="stopship" value="//STOPSHIP $user$ $date$ $todo$ " description="adds //STOPSHIP" toReformat="false" toShortenFQNames="true">
+    <variable name="user" expression="user()" defaultValue="" alwaysStopAt="false" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="false" />
+    <variable name="todo" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
 </templateSet>
 
