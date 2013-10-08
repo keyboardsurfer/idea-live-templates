@@ -1166,7 +1166,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="onMainThreadEvent" value="public void onEventMainThread(final $eventType$ $eventName$) {&#10;&#10;}" description="Adds onMainThreadEvent method for eventbus" toReformat="true" toShortenFQNames="true">
+  <template name="onEventMainThread" value="public void onEventMainThread(final $eventType$ $eventName$) {&#10;&#10;}" description="Adds onMainThreadEvent method for eventbus" toReformat="true" toShortenFQNames="true">
     <variable name="eventType" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="eventName" expression="suggestVariableName()" defaultValue="event" alwaysStopAt="true" />
     <context>
