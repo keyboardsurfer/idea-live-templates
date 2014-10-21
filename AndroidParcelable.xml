@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="AndroidParcelable">
+  <template name="Parcelable" value="protected $className$(Parcel in) {&#10;  &#10;}&#10;  &#10;@Override&#10;public int describeContents() {&#10;  return 0;&#10;}&#10;&#10;@Override&#10;public void writeToParcel(Parcel dest, int flags) {&#10;  &#10;}&#10;&#10;public static final Parcelable.Creator&lt;$className$&gt; CREATOR = new Parcelable.Creator&lt;$className$&gt;() {&#10;  @Override&#10;  public $className$ createFromParcel(Parcel in) {&#10;    return new $className$(in);&#10;  }&#10;&#10;  @Override&#10;  public $className$[] newArray(int size) {&#10;    return new $className$[size];&#10;  }&#10;};" description="Create a parcelable block for your current class" toReformat="true" toShortenFQNames="true">
+    <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="ParcelableEnum" value="@Override&#10;public int describeContents() {&#10;  return 0;&#10;}&#10;&#10;@Override&#10;public void writeToParcel(Parcel dest, int flags) {&#10;  dest.writeInt(this.ordinal());&#10;}&#10;   &#10;public static final Parcelable.Creator&lt;$className$&gt; CREATOR = new Parcelable.Creator&lt;$className$&gt;() {&#10;  @Override&#10;  public $className$ createFromParcel(Parcel in) {&#10;    return $className$.values()[in.readInt()];&#10;  }&#10;&#10;  @Override&#10;  public $className$[] newArray(int size) {&#10;    return new $className$[size];&#10;  }&#10;};" description="Create a parcelable block for your current enum" toReformat="true" toShortenFQNames="true">
+    <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="ParcelableEnumTest" value="@Test&#10;public void testDescribeContents() throws Exception {&#10;  for ($className$ value : $className$.values()) {&#10;    assertEquals(0, value.describeContents());&#10;  }&#10;}&#10;&#10;@Test&#10;public void testWriteToParcel() throws Exception {&#10;  Parcel parcel;&#10;  for ($className$ value : $className$.values()) {&#10;    parcel = Parcel.obtain();&#10;&#10;    Parcel parceled$className$ = ParcelableHelper.writeToParcelAndResetDataPosition(value, 0);&#10;    value.writeToParcel(parcel, 0);&#10;    parcel.setDataPosition(0);&#10;&#10;    $className$ unparceled$className$ = $className$.CREATOR.createFromParcel(parceled$className$);&#10;    assertEquals(value, unparceled$className$);&#10;  }&#10;}&#10;&#10;@Test&#10;public void testArrayParcelable() throws Exception {&#10;  $className$[] values = $className$.CREATOR.newArray($className$.values().length);&#10;  assertEquals($className$.values().length, values.length);&#10;}" description="Creates basic parcelable enum test methods" toReformat="false" toShortenFQNames="true">
+    <variable name="className" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="ParcelBoolean" value="dest.writeInt($bool$ ? 0 : 1);" description="writes a single boolean value to a parcel" toReformat="false" toShortenFQNames="true">
+    <variable name="bool" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="UnparcelBoolean" value="$bool$ = 0 == in.readInt();" description="reads a single boolean value from a parcel" toReformat="false" toShortenFQNames="true">
+    <variable name="bool" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="UnparcelIntArray" value="int $read$[] = in.createIntArray();&#10;in.readIntArray($read$);" description="Unparcels an int array" toReformat="false" toShortenFQNames="true">
+    <variable name="read" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="UnparcelStringArray" value="String $read$[] = in.createStringArray();&#10;in.readStringArray($read$);" description="Unparcels a String array" toReformat="false" toShortenFQNames="true">
+    <variable name="read" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
+
