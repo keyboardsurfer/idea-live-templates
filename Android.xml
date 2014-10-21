@@ -204,29 +204,6 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="ConstantBoolean" value="private static final boolean $NAME$ = $VALUE$;" description="private static final boolean" toReformat="false" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
   <template name="ViewConstructors" value="public $class$(Context context) {&#10;  this(context, null);&#10;}&#10;&#10;public $class$(Context context, AttributeSet attrs) {&#10;  this(context, attrs, 0);&#10;}&#10;&#10;public $class$(Context context, AttributeSet attrs, int defStyle) {&#10;  super(context, attrs, defStyle);&#10;  $cursor$&#10;}" description="Adds generic view constructors" toReformat="false" toShortenFQNames="true">
     <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="class" expression="className()" defaultValue="" alwaysStopAt="false" />
