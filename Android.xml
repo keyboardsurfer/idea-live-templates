@@ -227,7 +227,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="rgS" value="resources.getString(R.string.$stringId$)" description="get a color from resources" toReformat="false" toShortenFQNames="true">
+  <template name="rgS" value="resources.getString(R.string.$stringId$)" description="get a String from resources" toReformat="false" toShortenFQNames="true">
     <variable name="stringId" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -390,6 +390,15 @@
       <option name="GROOVY_DECLARATION" value="false" />
       <option name="MAVEN" value="false" />
       <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="newInstance" value="public static $fragment$ newInstance($args$) {&#10;    $nullChecks$&#10;    Bundle args = new Bundle();&#10;    $addArgs$&#10;    $fragment$ fragment = new $fragment$();&#10;    fragment.setArguments(args);&#10;    return fragment;&#10;}" description="create a new Fragment instance with arguments" toReformat="false" toShortenFQNames="true">
+    <variable name="fragment" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="args" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="nullChecks" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="addArgs" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
 </templateSet>
