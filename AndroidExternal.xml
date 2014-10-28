@@ -117,5 +117,11 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
+  <template name="createobservable" value="Observable.create(new Observable.OnSubscribe&lt;$TYPE$&gt;() {&#10;    @Override&#10;    public void call(Subscriber&lt;? super $TYPE$&gt; subscriber) {&#10;               &#10;    }&#10;});" description="Create RxJava Observable" toReformat="true" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
 
