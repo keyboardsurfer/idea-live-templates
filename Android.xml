@@ -299,5 +299,17 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
+  <template name="visible" value="$VIEW$.setVisibility(View.VISIBLE);" description="Set view visibility to VISIBLE" toReformat="true" toShortenFQNames="true">
+    <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="gone" value="$VIEW$.setVisibility(View.GONE);" description="Set view visibility to GONE" toReformat="true" toShortenFQNames="true">
+    <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
 
