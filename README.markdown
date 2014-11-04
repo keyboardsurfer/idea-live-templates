@@ -65,7 +65,28 @@ Once you found it, `cd` into it, run `git clone https://github.com/keyboardsurfe
 - **``lw``**: "android:layout_width=&quot;&quot;" 
 - **``lwm``**: "android:layout_width=&quot;match_parent&quot;" 
 - **``lww``**: "android:layout_width=&quot;wrap_content&quot;" 
-- **``toolsNs``**: "adds tools namespace to Android xml file" 
+- **``toolsNs``**: "adds tools namespace to Android xml file"
+
+###AndroidGradleDependencies.xml
+- **``async-http``**: "A Callback-Based Http Client Library for Android" 
+- **``crouton``**: "Context sensitive notifications for Android" 
+- **``eventbus``**: "Android optimized publish/subscribe event bus." 
+- **``gson``**: "Java library to serialize and deserialize Java objects to (and from) JSON." 
+- **``mediarouter``**: "Routing of media channels and streams from the current device to external speakers and destination devices" 
+- **``nineoldandroids``**: "Honeycomb (Android 3.0) animation API on all versions of the platform." 
+- **``okhttp``**: "An HTTP+SPDY client for Android and Java applications." 
+- **``palette``**: "A helper class to extract prominent colors from an image." 
+- **``picasso``**: "A powerful image downloading and caching library for Android." 
+- **``play-services``**: "A powerful image downloading and caching library for Android." 
+- **``recyclerview``**: "A flexible view for providing a limited window into a large data set. " 
+- **``retrofit``**: "Retrofit turns your REST API into a Java interface." 
+- **``smooth-progressbar``**: "Smooth indeterminate progress bar." 
+- **``smooth-progressbar-circular``**: "Smooth indeterminate circular progress bar." 
+- **``sv4``**: "Support v4(api level 4) library." 
+- **``sv7``**: "Support v7(api level 7) library."
+- **``sv7cardview``**: "A FrameLayout with a rounded corner background and shadow." 
+- **``sv7grid``**: "Support GridLayout library v7(api level 7)" 
+- **``universal-image-loader``**: "A powerful image downloading and caching library for Android."  
 
 ##Contribution
 1. Fork

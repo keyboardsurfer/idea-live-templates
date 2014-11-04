@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="AndroidGradleDependencies">
+  <template name="sv4" value="compile 'com.android.support:support-v4:$major$.$minor$.$build$'" description="support v4  gradle dependencies" toReformat="true" toShortenFQNames="true">
+    <variable name="major" expression="&quot;21&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="minor" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="build" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="sv7" value="compile 'com.android.support:appcompat-v7:$major$.$minor$.$build$'" description="support app compat v7 gradle dependency" toReformat="false" toShortenFQNames="true">
+    <variable name="major" expression="&quot;21&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="minor" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="build" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+    </context>
+  </template>
+  <template name="eventbus" value="compile 'de.greenrobot:eventbus:$major$.$minor$.$build$'" description="eventbus gradle depency" toReformat="false" toShortenFQNames="true">
+    <variable name="major" expression="&quot;2&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="minor" expression="&quot;2&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="build" expression="&quot;1&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+    </context>
+  </template>
+  <template name="nineoldandroids" value="compile ('com.nineoldandroids:$major$.$minor$.$build$')" description="nineoldandroids gradle dependencies" toReformat="false" toShortenFQNames="true">
+    <variable name="major" expression="&quot;2&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="minor" expression="&quot;4&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="build" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+    </context>
+  </template>
+  <template name="gson" value=" compile 'com.google.code.gson:gson:$major$.$minor$.$build$'" description="gson gradle dependency" toReformat="false" toShortenFQNames="true">
+    <variable name="major" expression="&quot;2&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="minor" expression="&quot;2&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="build" expression="&quot;4&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+    </context>
+  </template>
+  <template name="sv7grid" value="compile 'com.android.support:gridlayout-v7:$major$.$minor$.$build$'" description="support gridlayout gradle dependency" toReformat="false" toShortenFQNames="true">
+    <variable name="major" expression="&quot;21&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="minor" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="build" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+    </context>
+  </template>
+  <template name="async-http" value="compile 'com.loopj.android:android-async-http:$major$.$minor$.$build$'" description="async http gradle dependency" toReformat="false" toShortenFQNames="true">
+    <variable name="major" expression="&quot;1&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="minor" expression="&quot;4&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="build" expression="&quot;6&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+    </context>
+  </template>
+  <template name="sv7cardview" value="compile 'com.android.support:cardview-v7:$major$.$minor$.$build$'" description="cardview gradle dependency" toReformat="false" toShortenFQNames="true">
+    <variable name="major" expression="&quot;21&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="minor" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="build" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+    </context>
+  </template>
+  <template name="mediarouter" value="compile 'com.android.support:mediarouter-v7:$major$.$minor$.$build$'" description="support v7 mediarouter gradle dependency" toReformat="false" toShortenFQNames="true">
+    <variable name="major" expression="&quot;21&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="minor" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="build" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+    </context>
+  </template>
+  <template name="palette" value="compile 'com.android.support:palette-v7:$major$.$minor$.$build$'" description="support v7 palette gradle dependency" toReformat="false" toShortenFQNames="true">
+    <variable name="major" expression="&quot;21&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="minor" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="build" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+    </context>
+  </template>
+  <template name="recyclerview" value="compile 'com.android.support:recyclerview-v7:$major$.$minor$.$build$'" description="support v7 recyclerview gradle dependency" toReformat="false" toShortenFQNames="true">
+    <variable name="major" expression="&quot;21&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="minor" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="build" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+    </context>
+  </template>
+  <template name="play-services" value="compile 'com.google.android.gms:play-services:$major$.$minor$.$build$'" description="google play services gradle dependency" toReformat="false" toShortenFQNames="true">
+    <variable name="major" expression="&quot;6&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="minor" expression="&quot;1&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="build" expression="&quot;+&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+    </context>
+  </template>
+  <template name="universal-image-loader" value="compile 'com.nostra13.universalimageloader:universal-image-loader:com.loopj.android:android-async-http:$major$.$minor$.$build$'" toReformat="false" toShortenFQNames="true">
+    <variable name="major" expression="&quot;1&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="minor" expression="&quot;9&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="build" expression="&quot;3&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="crouton" value="compile 'de.keyboardsurfer.android.widget:crouton:$major$.$minor$.$build$@aar'" description="crouton gradle dependency" toReformat="false" toShortenFQNames="true">
+    <variable name="major" expression="&quot;1&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="minor" expression="&quot;8&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="build" expression="&quot;5&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="picasso" value="compile 'com.squareup.picasso:picasso:$major$.$minor$.$build$'" description="picasso gradle dependency" toReformat="false" toShortenFQNames="true">
+    <variable name="major" expression="&quot;2&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="minor" expression="&quot;3&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="build" expression="&quot;4&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+    </context>
+  </template>
+  <template name="okhttp" value="compile 'com.squareup.okhttp:okhttp:$major$.$minor$.$build$'" description="okhttp gradle dependency" toReformat="false" toShortenFQNames="true">
+    <variable name="major" expression="&quot;2&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="minor" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="build" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+    </context>
+  </template>
+  <template name="retrofit" value="compile 'com.squareup.retrofit:retrofit:$major$.$minor$.$build$'" description="retrofit" toReformat="false" toShortenFQNames="true">
+    <variable name="major" expression="&quot;1&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="minor" expression="&quot;7&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="build" expression="&quot;1&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+    </context>
+  </template>
+  <template name="smooth-progressbar" value="compile 'com.github.castorflex.smoothprogressbar:library:$major$.$minor$.$build$'" description="smooth progressbar gradle dependency" toReformat="false" toShortenFQNames="true">
+    <variable name="major" expression="&quot;1&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="minor" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="build" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+    </context>
+  </template>
+  <template name="smooth-progressbar-circular" value="compile 'com.github.castorflex.smoothprogressbar:library-circular:$major$.$minor$.$build$'" description="smooth progressbar circular gradle dependency" toReformat="false" toShortenFQNames="true">
+    <variable name="major" expression="&quot;1&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="minor" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="build" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
+
