@@ -45,9 +45,8 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="psf" value="private static final $type$ $name$;" description="private static final variable with type and member" toReformat="true" toShortenFQNames="true">
+  <template name="psf" value="private static final $type$;" description="private static final variable with type and member" toReformat="true" toShortenFQNames="true">
     <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -68,7 +67,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="rouiT" value="getActivity().runOnUiThread(new Runnable() {&#10;  @Override&#10;  public void run() {&#10;    $cursor$&#10;  }&#10;});" description="runOnUIThread" toReformat="true" toShortenFQNames="true">
+  <template name="rouiT" value="getActivity().runOnUiThread(new Runnable() {&#10;    @Override&#10;    public void run() {&#10;        $cursor$&#10;    }&#10;});" description="runOnUIThread" toReformat="true" toShortenFQNames="true">
     <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -90,7 +89,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="fbc" value="($cast$) findViewById(R.id.$resId$);" description="findViewById with cast" toReformat="false" toShortenFQNames="true">
+  <template name="fbc" value="($cast$) findViewById(R.id.$resId$);" description="findViewById with cast" toReformat="true" toShortenFQNames="true">
     <variable name="cast" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="resId" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -113,7 +112,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="foreach" value="for ($i$ : $data$) {&#10;  $cursor$&#10;}" description="Create a for each loop" toReformat="false" toShortenFQNames="true">
+  <template name="foreach" value="for ($i$ : $data$) {&#10;    $cursor$&#10;}" description="Create a for each loop" toReformat="true" toShortenFQNames="true">
     <variable name="i" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="data" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
@@ -137,7 +136,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="sbc" value="///////////////////////////////////////////////////////////////////////////&#10;// $blockName$&#10;///////////////////////////////////////////////////////////////////////////" description="block comment for structuring code" toReformat="false" toShortenFQNames="true">
+  <template name="sbc" value="///////////////////////////////////////////////////////////////////////////&#10;// $blockName$&#10;///////////////////////////////////////////////////////////////////////////" description="block comment for structuring code" toReformat="true" toShortenFQNames="true">
     <variable name="blockName" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -159,7 +158,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="Sfmt" value="String.format(&quot;$string$&quot;, $params$);" description="String format" toReformat="false" toShortenFQNames="true">
+  <template name="Sfmt" value="String.format(&quot;$string$&quot;, $params$);" description="String format" toReformat="true" toShortenFQNames="true">
     <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -182,7 +181,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="IntentView" value="Intent view = new Intent();&#10;                view.setAction(Intent.ACTION_VIEW);&#10;                view.setData(Uri.parse($url$));&#10;                startActivity(view);" description="Creates an Intent with ACTION_VIEW" toReformat="false" toShortenFQNames="true">
+  <template name="IntentView" value="Intent view = new Intent();&#10;view.setAction(Intent.ACTION_VIEW);&#10;view.setData(Uri.parse($url$));&#10;startActivity(view);" description="Creates an Intent with ACTION_VIEW" toReformat="true" toShortenFQNames="true">
     <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -204,7 +203,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="ViewConstructors" value="public $class$(Context context) {&#10;  this(context, null);&#10;}&#10;&#10;public $class$(Context context, AttributeSet attrs) {&#10;  this(context, attrs, 0);&#10;}&#10;&#10;public $class$(Context context, AttributeSet attrs, int defStyle) {&#10;  super(context, attrs, defStyle);&#10;  $cursor$&#10;}" description="Adds generic view constructors" toReformat="false" toShortenFQNames="true">
+  <template name="ViewConstructors" value="public $class$(Context context) {&#10;    this(context, null);&#10;}&#10;&#10;public $class$(Context context, AttributeSet attrs) {&#10;    this(context, attrs, 0);&#10;}&#10;&#10;public $class$(Context context, AttributeSet attrs, int defStyle) {&#10;    super(context, attrs, defStyle);&#10;    $cursor$&#10;}" description="Adds generic view constructors" toReformat="true" toShortenFQNames="true">
     <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="class" expression="className()" defaultValue="" alwaysStopAt="false" />
     <context>
@@ -227,7 +226,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="rgS" value="resources.getString(R.string.$stringId$)" description="get a String from resources" toReformat="false" toShortenFQNames="true">
+  <template name="rgS" value="resources.getString(R.string.$stringId$)" description="get a String from resources" toReformat="true" toShortenFQNames="true">
     <variable name="stringId" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -249,13 +248,13 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="wrapIt" value="task wrapper(type: Wrapper) {&#10;    gradleVersion = &quot;$version$&quot;&#10;}" description="adds a gradle wrapper task" toReformat="false" toShortenFQNames="true">
+  <template name="wrapIt" value="task wrapper(type: Wrapper) {&#10;    gradleVersion = &quot;$version$&quot;&#10;}" description="adds a gradle wrapper task" toReformat="true" toShortenFQNames="true">
     <variable name="version" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="GROOVY_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="rgC" value="resources.getColor(R.color.$colorId$)" description="get a color from resources" toReformat="false" toShortenFQNames="true">
+  <template name="rgC" value="resources.getColor(R.color.$colorId$)" description="get a color from resources" toReformat="true" toShortenFQNames="true">
     <variable name="colorId" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -277,9 +276,8 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="pf" value="private final $type$ $name$;" description="private static final variable with type and member" toReformat="true" toShortenFQNames="true">
+  <template name="pf" value="private final $type$;" description="private final variable with type and member" toReformat="true" toShortenFQNames="true">
     <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -392,11 +390,17 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="newInstance" value="public static $fragment$ newInstance($args$) {&#10;    $nullChecks$&#10;    Bundle args = new Bundle();&#10;    $addArgs$&#10;    $fragment$ fragment = new $fragment$();&#10;    fragment.setArguments(args);&#10;    return fragment;&#10;}" description="create a new Fragment instance with arguments" toReformat="false" toShortenFQNames="true">
+  <template name="newInstance" value="public static $fragment$ newInstance($args$) {&#10;    $nullChecks$&#10;    Bundle args = new Bundle();&#10;    $addArgs$&#10;    $fragment$ fragment = new $fragment$();&#10;    fragment.setArguments(args);&#10;    return fragment;&#10;}" description="create a new Fragment instance with arguments" toReformat="true" toShortenFQNames="true">
     <variable name="fragment" expression="className()" defaultValue="" alwaysStopAt="true" />
     <variable name="args" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="nullChecks" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="addArgs" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="noInstance" value="private $class$() {&#10;    //no instance&#10;}" description="private empty constructor to prohibit instance creation" toReformat="true" toShortenFQNames="true">
+    <variable name="class" expression="className()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_DECLARATION" value="true" />
     </context>

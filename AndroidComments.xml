@@ -86,7 +86,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="fixme" value="//FIXME $date$ $todo$" description="adds //FIXME" toReformat="false" toShortenFQNames="true">
+  <template name="fixme" value="// FIXME: $date$ $todo$" description="adds //FIXME" toReformat="true" toShortenFQNames="true">
     <variable name="date" expression="date()" defaultValue="" alwaysStopAt="false" />
     <variable name="todo" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -109,7 +109,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="noop" value="/* no-op */" description="indicate that a method does not have any operations" toReformat="false" toShortenFQNames="true">
+  <template name="noop" value="/* no-op */" description="indicate that a method does not have any operations" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -130,7 +130,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="stopship" value="//STOPSHIP $date$ $todo$ " description="adds //STOPSHIP" toReformat="false" toShortenFQNames="true">
+  <template name="stopship" value="// STOPSHIP: $date$ $todo$ " description="adds //STOPSHIP" toReformat="true" toShortenFQNames="true">
     <variable name="date" expression="date()" defaultValue="" alwaysStopAt="false" />
     <variable name="todo" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -153,7 +153,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="todo" value="//TODO $date$ $todo$ " description="adds //TODO" toReformat="false" toShortenFQNames="true">
+  <template name="todo" value="// TODO: $date$ $todo$ " description="adds //TODO" toReformat="true" toShortenFQNames="true">
     <variable name="date" expression="date()" defaultValue="" alwaysStopAt="false" />
     <variable name="todo" expression="" defaultValue="" alwaysStopAt="true" />
     <context>

@@ -44,7 +44,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="ParcelableEnumTest" value="@Test&#10;public void testDescribeContents() throws Exception {&#10;  for ($className$ value : $className$.values()) {&#10;    assertEquals(0, value.describeContents());&#10;  }&#10;}&#10;&#10;@Test&#10;public void testWriteToParcel() throws Exception {&#10;  Parcel parcel;&#10;  for ($className$ value : $className$.values()) {&#10;    parcel = Parcel.obtain();&#10;&#10;    Parcel parceled$className$ = ParcelableHelper.writeToParcelAndResetDataPosition(value, 0);&#10;    value.writeToParcel(parcel, 0);&#10;    parcel.setDataPosition(0);&#10;&#10;    $className$ unparceled$className$ = $className$.CREATOR.createFromParcel(parceled$className$);&#10;    assertEquals(value, unparceled$className$);&#10;  }&#10;}&#10;&#10;@Test&#10;public void testArrayParcelable() throws Exception {&#10;  $className$[] values = $className$.CREATOR.newArray($className$.values().length);&#10;  assertEquals($className$.values().length, values.length);&#10;}" description="Creates basic parcelable enum test methods" toReformat="false" toShortenFQNames="true">
+  <template name="ParcelableEnumTest" value="@Test&#10;public void testDescribeContents() throws Exception {&#10;  for ($className$ value : $className$.values()) {&#10;    assertEquals(0, value.describeContents());&#10;  }&#10;}&#10;&#10;@Test&#10;public void testWriteToParcel() throws Exception {&#10;  Parcel parcel;&#10;  for ($className$ value : $className$.values()) {&#10;    parcel = Parcel.obtain();&#10;&#10;    Parcel parceled$className$ = ParcelableHelper.writeToParcelAndResetDataPosition(value, 0);&#10;    value.writeToParcel(parcel, 0);&#10;    parcel.setDataPosition(0);&#10;&#10;    $className$ unparceled$className$ = $className$.CREATOR.createFromParcel(parceled$className$);&#10;    assertEquals(value, unparceled$className$);&#10;  }&#10;}&#10;&#10;@Test&#10;public void testArrayParcelable() throws Exception {&#10;  $className$[] values = $className$.CREATOR.newArray($className$.values().length);&#10;  assertEquals($className$.values().length, values.length);&#10;}" description="Creates basic parcelable enum test methods" toReformat="true" toShortenFQNames="true">
     <variable name="className" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -66,15 +66,15 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="ParcelBoolean" value="dest.writeInt($bool$ ? 0 : 1);" description="writes a single boolean value to a parcel" toReformat="false" toShortenFQNames="true">
+  <template name="ParcelBoolean" value="dest.writeInt($bool$ ? 0 : 1);" description="writes a single boolean value to a parcel" toReformat="true" toShortenFQNames="true">
     <variable name="bool" expression="" defaultValue="" alwaysStopAt="true" />
     <context />
   </template>
-  <template name="UnparcelBoolean" value="$bool$ = 0 == in.readInt();" description="reads a single boolean value from a parcel" toReformat="false" toShortenFQNames="true">
+  <template name="UnparcelBoolean" value="$bool$ = 0 == in.readInt();" description="reads a single boolean value from a parcel" toReformat="true" toShortenFQNames="true">
     <variable name="bool" expression="" defaultValue="" alwaysStopAt="true" />
     <context />
   </template>
-  <template name="UnparcelIntArray" value="int $read$[] = in.createIntArray();&#10;in.readIntArray($read$);" description="Unparcels an int array" toReformat="false" toShortenFQNames="true">
+  <template name="UnparcelIntArray" value="int $read$[] = in.createIntArray();&#10;in.readIntArray($read$);" description="Unparcels an int array" toReformat="true" toShortenFQNames="true">
     <variable name="read" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -96,7 +96,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="UnparcelStringArray" value="String $read$[] = in.createStringArray();&#10;in.readStringArray($read$);" description="Unparcels a String array" toReformat="false" toShortenFQNames="true">
+  <template name="UnparcelStringArray" value="String $read$[] = in.createStringArray();&#10;in.readStringArray($read$);" description="Unparcels a String array" toReformat="true" toShortenFQNames="true">
     <variable name="read" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />

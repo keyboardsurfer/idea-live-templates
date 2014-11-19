@@ -46,7 +46,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="CroutonShow" value="Crouton.showText($className$.this, &quot;$text$&quot;, Style.$style$);" description="Creates a new Crouton with Crouton.showText" toReformat="false" toShortenFQNames="true">
+  <template name="CroutonShow" value="Crouton.showText($className$.this, &quot;$text$&quot;, Style.$style$);" description="Creates a new Crouton with Crouton.showText" toReformat="true" toShortenFQNames="true">
     <variable name="className" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="style" expression="" defaultValue="" alwaysStopAt="true" />
@@ -70,7 +70,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="CroutonFragment" value="Crouton.showText(getActivity(), &quot;$text$&quot;, Style.$style$, (ViewGroup) getView());" description="Creates a new Crouton for display within a fragment" toReformat="false" toShortenFQNames="true">
+  <template name="CroutonFragment" value="Crouton.showText(getActivity(), &quot;$text$&quot;, Style.$style$, (ViewGroup) getView());" description="Creates a new Crouton for display within a fragment" toReformat="true" toShortenFQNames="true">
     <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="style" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -93,7 +93,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="Crouton" value="Crouton.makeText($className$.this, &quot;$text$&quot;, Style.$style$).show();" description="Creates a new Crouton" toReformat="false" toShortenFQNames="true">
+  <template name="Crouton" value="Crouton.makeText($className$.this, &quot;$text$&quot;, Style.$style$).show();" description="Creates a new Crouton" toReformat="true" toShortenFQNames="true">
     <variable name="className" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="style" expression="" defaultValue="" alwaysStopAt="true" />

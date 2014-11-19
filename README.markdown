@@ -19,7 +19,8 @@ Once you found it, `cd` into it, run `git clone https://github.com/keyboardsurfe
 - **``logi``**: "Log.i(TAG, String)" 
 - **``LogTag``**: "A static logtag with your current classname" 
 - **``newInstance``**: "create a new Fragment instance with arguments" 
-- **``pf``**: "private static final variable with type and member" 
+- **``noInstance``**: "private empty constructor to prohibit instance creation" 
+- **``pf``**: "private final variable with type and member" 
 - **``psf``**: "private static final variable with type and member" 
 - **``rgC``**: "get a color from resources" 
 - **``rgS``**: "get a String from resources" 
@@ -73,3 +74,9 @@ Once you found it, `cd` into it, run `git clone https://github.com/keyboardsurfe
 3. Send me a pull request
 4. Wait
 5. Profit
+
+
+## License
+
+* [Apache Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
+
