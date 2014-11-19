@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="layoutsAndLocales">
+<template name="toolsns" value="xmlns:tools=&quot;http://schemas.android.com/tools&quot;" description="adds application namespace" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="fragmentEmptyView" value="$emptyViewVariable$ = ($WidgetClass$) $view$.findViewById(android.R.id.empty);" description="Adds  Empty View in Java" toReformat="true" toShortenFQNames="true">
+    <variable name="emptyViewVariable" expression="" defaultValue="emptyView" alwaysStopAt="true" />
+    <variable name="WidgetClass" expression="" defaultValue="FrameLayout" alwaysStopAt="true" />
+    <variable name="view" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_TEXT" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="activityEmptyView" value="$emptyViewVariable$ = ($WidgetClass$) findViewById(android.R.id.empty);" description="Adds  Empty View in Java" toReformat="true" toShortenFQNames="true">
+    <variable name="emptyViewVariable" expression="" defaultValue="emptyView" alwaysStopAt="true" />
+    <variable name="WidgetClass" expression="" defaultValue="FrameLayout" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_TEXT" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="inflate" value="android.view.LayoutInflater inflater = LayoutInflater.from($context$);&#10;android.view.View view = inflater.inflate(R.layout.$layout$, $parent$, $attach$);" description="Create layoutInflater and inflate view" toReformat="false" toShortenFQNames="true">
+    <variable name="context" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="layout" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="parent" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="attach" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="toolsText" value="tools:text=&quot;$Text$&quot;" description="adds tools:text attribute" toReformat="false" toShortenFQNames="true">
+    <variable name="Text" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="emptyView" value="&lt;FrameLayout&#10;        android:id=&quot;@android:id/empty&quot;&#10;        android:layout_width=&quot;$width$&quot;&#10;        android:layout_height=&quot;$height$&quot;&gt;&#10;        &lt;/FrameLayout&gt;" description="Adds a framelayout as an emptyview" toReformat="true" toShortenFQNames="true">
+    <variable name="width" expression="" defaultValue="wrap_content" alwaysStopAt="true" />
+    <variable name="height" expression="" defaultValue="wrap_content" alwaysStopAt="true" />
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="toolsvisibility" value="tools:visibility=&quot;$visibility$&quot;" description="Adds Visibility in tools" toReformat="true" toShortenFQNames="true">
+    <variable name="visibility" expression="enum(visible,invisible,gone)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="defLoc" value="Locale.getDefault()" description="Default Locale" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
