@@ -90,8 +90,8 @@
     </context>
   </template>
   <template name="fbc" value="($cast$) findViewById(R.id.$resId$);" description="findViewById with cast" toReformat="true" toShortenFQNames="true">
-    <variable name="cast" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="resId" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="cast" expression="expectedType()" defaultValue="" alwaysStopAt="true" />
+    <variable name="resId" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -99,7 +99,7 @@
       <option name="XML" value="false" />
       <option name="JAVA_CODE" value="false" />
       <option name="JAVA_STATEMENT" value="true" />
-      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_DECLARATION" value="false" />
       <option name="JAVA_COMMENT" value="false" />
       <option name="JAVA_STRING" value="false" />
