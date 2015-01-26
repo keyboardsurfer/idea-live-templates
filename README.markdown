@@ -11,6 +11,8 @@ Once you found it, `cd` into it, run `git clone https://github.com/keyboardsurfe
 ##Currently included live templates
 
 ### Android.xml
+- **``key``**: "declare a constant KEY_XXX for a bundle" 
+- **``var``**: "declare a android-style int constant" 
 - **``fbc``**: "findViewById with cast" 
 - **``foreach``**: "Create a for each loop" 
 - **``IntentView``**: "Creates an Intent with ACTION_VIEW" 
