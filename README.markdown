@@ -47,6 +47,9 @@ Once you found it, `cd` into it, run `git clone https://github.com/keyboardsurfe
 - **``onEventMainThread``**: "Adds onMainThreadEvent method for eventbus" 
 
 ### AndroidLog.xml
+
+- **``logm``**: "Log.d(TAG, $METHOD_NAME$() was called with args : name1=[value1] name2=[value2} ..)"
+- **``logr``**: "Log.d(TAG, $METHOD_NAME$() returned $result$") ; return $result" 
 - **``logd``**: "Log.d(TAG, String)" 
 - **``loge``**: "Log.e(TAG, String)" 
 - **``logi``**: "Log.i(TAG, String)" 
