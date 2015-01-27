@@ -17,8 +17,6 @@ Once you found it, `cd` into it, run `git clone https://github.com/keyboardsurfe
 - **``LogTag``**: "A static logtag with your current classname" 
 - **``newInstance``**: "create a new Fragment instance with arguments" 
 - **``noInstance``**: "private empty constructor to prohibit instance creation" 
-- **``pf``**: "private final variable with type and member" 
-- **``psf``**: "private static final variable with type and member" 
 - **``rgC``**: "get a color from resources" 
 - **``rgS``**: "get a String from resources" 
 - **``rouiT``**: "runOnUIThread" 
@@ -70,6 +68,7 @@ Once you found it, `cd` into it, run `git clone https://github.com/keyboardsurfe
 - **``lwm``**: "android:layout_width=&quot;match_parent&quot;" 
 - **``lww``**: "android:layout_width=&quot;wrap_content&quot;" 
 - **``toolsNs``**: "adds tools namespace to Android xml file" 
+
 
 ##Contribution
 1. Fork
