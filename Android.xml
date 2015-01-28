@@ -249,7 +249,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="rgS" value="resources.getString(R.string.$stringId$)" description="get a String from resources" toReformat="true" toShortenFQNames="true">
+  <template name="rgS" value="mResources.getString(R.string.$stringId$)" description="get a String from resources" toReformat="true" toShortenFQNames="true">
     <variable name="stringId" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -277,7 +277,7 @@
       <option name="GROOVY_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="rgC" value="resources.getColor(R.color.$colorId$)" description="get a color from resources" toReformat="true" toShortenFQNames="true">
+  <template name="rgC" value="mResources.getColor(R.color.$colorId$)" description="get a color from resources" toReformat="true" toShortenFQNames="true">
     <variable name="colorId" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -288,28 +288,6 @@
       <option name="JAVA_STATEMENT" value="true" />
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="pf" value="private final $type$;" description="private final variable with type and member" toReformat="true" toShortenFQNames="true">
-    <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="true" />
       <option name="JAVA_COMMENT" value="false" />
       <option name="JAVA_STRING" value="false" />
       <option name="COMPLETION" value="false" />
