@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Android">
-  <template name="LogTag" value="private static final String TAG = &quot;$className$&quot;;" description="A static logtag with your current classname" toReformat="true" toShortenFQNames="true">
+  <template name="logt" value="private static final String TAG = &quot;$className$&quot;;" description="A static logtag with your current classname" toReformat="true" toShortenFQNames="true">
     <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -67,7 +67,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="var" value="private static final int $name$ = $value$;" description="Define android style int constant" toReformat="true" toShortenFQNames="true">
+  <template name="const" value="private static final int $name$ = $value$;" description="Define android style int constant" toReformat="true" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="NAME" alwaysStopAt="true" />
     <variable name="value" expression="groovyScript(&quot;new Random().nextInt(1000)&quot;)" defaultValue="0" alwaysStopAt="false" />
     <context>
