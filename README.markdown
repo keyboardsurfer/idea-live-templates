@@ -15,6 +15,7 @@ Once you found it, `cd` into it, run `git clone https://github.com/keyboardsurfe
 - **`const`**: "Define android style int constant"
 - **`fbc`**: "findViewById with cast"
 - **`foreach`**: "Create a for each loop"
+- **`gone`**: "Set view visibility to GONE"
 - **`IntentView`**: "Creates an Intent with ACTION_VIEW"
 - **`key`**: "Key for a bundle"
 - **`newInstance`**: "create a new Fragment instance with arguments"
@@ -27,6 +28,7 @@ Once you found it, `cd` into it, run `git clone https://github.com/keyboardsurfe
 - **`starter`**: "Creates a static start(...) helper method to start an Activity"
 - **`Toast`**: "Create a new Toast"
 - **`ViewConstructors`**: "Adds generic view constructors"
+- **`visible`**: "Set view visibility to VISIBLE"
 - **`wrapIt`**: "adds a gradle wrapper task"
 
 ### AndroidComments.xml
@@ -40,6 +42,7 @@ Once you found it, `cd` into it, run `git clone https://github.com/keyboardsurfe
 - **`todo`**: "adds //TODO"
 
 ### AndroidExternal.xml
+- **`createObservable`**: "Create RxJava Observable"
 - **`Crouton`**: "Creates a new Crouton"
 - **`CroutonFragment`**: "Creates a new Crouton for display within a fragment"
 - **`CroutonShow`**: "Creates a new Crouton with Crouton.showText"
