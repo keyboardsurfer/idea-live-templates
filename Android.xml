@@ -182,7 +182,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="rgS" value="mResources.getString(R.string.$stringId$)" description="get a String from resources" toReformat="true" toShortenFQNames="true">
+  <template name="rgS" value="$resources$.getString(R.string.$stringId$)" description="get a String from resources" toReformat="true" toShortenFQNames="true">
     <variable name="stringId" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -210,7 +210,7 @@
       <option name="GROOVY_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="rgC" value="mResources.getColor(R.color.$colorId$)" description="get a color from resources" toReformat="true" toShortenFQNames="true">
+  <template name="rgC" value="$resources$.getColor(R.color.$colorId$)" description="get a color from resources" toReformat="true" toShortenFQNames="true">
     <variable name="colorId" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -312,4 +312,3 @@
     </context>
   </template>
 </templateSet>
-
