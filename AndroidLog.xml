@@ -137,7 +137,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="logr" value="Log.d(TAG, &quot;$METHOD_NAME$() returned &quot; +  $result$);&#10;return $result$;" description="Log result of this method" toReformat="true" toShortenFQNames="true">
+  <template name="logr" value="Log.d(TAG, &quot;$METHOD_NAME$() returned &quot; +  $result$);" description="Log result of this method" toReformat="true" toShortenFQNames="true">
     <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="false" />
     <variable name="result" expression="variableOfType(methodReturnType())" defaultValue="" alwaysStopAt="true" />
     <context>
