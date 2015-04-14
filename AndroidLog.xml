@@ -93,7 +93,7 @@
     </context>
   </template>
   <template name="logt" value="private static final String TAG = &quot;$className$&quot;;" description="A static logtag with your current classname" toReformat="true" toShortenFQNames="true">
-    <variable name="className" expression="groovyScript(&quot;_1.substring(0,23)&quot;, className())" defaultValue="" alwaysStopAt="true" />
+    <variable name="className" expression="groovyScript(&quot;_1.substring(0, Math.min(23, _1.length()))&quot;, className())" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
