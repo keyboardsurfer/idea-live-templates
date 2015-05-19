@@ -54,6 +54,7 @@ Once you found it, `cd` into it, run `git clone https://github.com/keyboardsurfe
 - **`loge`**: "Log.e(TAG, String)"
 - **`logi`**: "Log.i(TAG, String)"
 - **`logm`**: "Log method name and its arguments"
+- **`logvm`**: "Log void method name"
 - **`logr`**: "Log result of this method"
 - **`logt`**: "A static logtag with your current classname"
 - **`wtf`**: "Log.wtf(TAG, String)"
