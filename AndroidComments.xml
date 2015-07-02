@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="AndroidComments">
   <template name="ccode" value="&lt;code&gt;$code$&lt;/code&gt;" description="code tag for javadoc" toReformat="false" toShortenFQNames="true">
     <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
@@ -177,4 +176,3 @@
     </context>
   </template>
 </templateSet>
-

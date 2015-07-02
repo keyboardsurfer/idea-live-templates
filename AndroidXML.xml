@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="AndroidXML">
   <template name="appNs" value="xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;" description="adds application namespace" toReformat="true" toShortenFQNames="true">
     <context>
@@ -171,4 +170,3 @@
     </context>
   </template>
 </templateSet>
-
