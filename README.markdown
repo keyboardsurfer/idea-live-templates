@@ -31,6 +31,7 @@ Once you found it, `cd` into it, run `git clone https://github.com/keyboardsurfe
 - **`visible`**: "Set view visibility to VISIBLE"
 - **`wrapIt`**: "adds a gradle wrapper task"
 - **`tag`**: Declare a debugging tag"
+
 ### AndroidComments.xml
 - **`ccode`**: "code tag for javadoc"
 - **`cfalse`**: "puts false in a comment section"
