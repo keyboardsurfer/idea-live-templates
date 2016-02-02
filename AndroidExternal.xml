@@ -4,46 +4,14 @@
     <variable name="eventType" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="eventName" expression="suggestVariableName()" defaultValue="event" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
       <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="onEvent" value="public void onEvent(final $eventType$ $eventName$) {&#10;&#10;}" description="Adds onEvent method for eventbus" toReformat="true" toShortenFQNames="true">
     <variable name="eventType" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="eventName" expression="suggestVariableName()" defaultValue="event" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
       <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="CroutonShow" value="Crouton.showText($className$.this, &quot;$text$&quot;, Style.$style$);" description="Creates a new Crouton with Crouton.showText" toReformat="true" toShortenFQNames="true">
@@ -51,46 +19,14 @@
     <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="style" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="JAVA_CODE" value="false" />
       <option name="JAVA_STATEMENT" value="true" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="CroutonFragment" value="Crouton.showText(getActivity(), &quot;$text$&quot;, Style.$style$, (ViewGroup) getView());" description="Creates a new Crouton for display within a fragment" toReformat="true" toShortenFQNames="true">
     <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="style" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="JAVA_CODE" value="false" />
       <option name="JAVA_STATEMENT" value="true" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="Crouton" value="Crouton.makeText($className$.this, &quot;$text$&quot;, Style.$style$).show();" description="Creates a new Crouton" toReformat="true" toShortenFQNames="true">
@@ -98,23 +34,7 @@
     <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="style" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="JAVA_CODE" value="false" />
       <option name="JAVA_STATEMENT" value="true" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="createObservable" value="Observable.create(new Observable.OnSubscribe&lt;$TYPE$&gt;() {&#10;    @Override&#10;    public void call(Subscriber&lt;? super $TYPE$&gt; subscriber) {&#10;               &#10;    }&#10;});" description="Create RxJava Observable" toReformat="true" toShortenFQNames="true">
