@@ -116,5 +116,17 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="spl" value="private volatile static $CLASSNAME$ mInstance = null;&#10;&#10;private $CLASSNAME$() {&#10;    $END$&#10;}&#10;&#10;public static $CLASSNAME$ getInstance() {&#10;    if (mInstance == null) {&#10;        synchronized ($CLASSNAME$.class) {&#10;            if (mInstance == null){&#10;                mInstance = new $CLASSNAME$();&#10;            }&#10;        }&#10;    }&#10;    return mInstance;&#10;}" description="Lazy initialization of singleton pattern" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASSNAME" expression="className()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="spe" value="private static final $CLASSNAME$ mInstance = new $CLASSNAME$();&#10;&#10;private $CLASSNAME$() {&#10;    $END$&#10;}&#10;&#10;public static $CLASSNAME$ getInstance() {&#10;    return mInstance;&#10;}" description="Eager initialization of singleton pattern" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASSNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
 </templateSet>
 
