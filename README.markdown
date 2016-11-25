@@ -42,6 +42,8 @@ and restart AndroidStudio.
 - **`ViewConstructors`**: "Adds generic view constructors"
 - **`visible`**: "Set view visibility to VISIBLE"
 - **`wrapIt`**: "adds a gradle wrapper task"
+- **`tag`**: "Declare a debugging tag"
+- **`tos`**: "Creates a toString method"
 
 ### AndroidComments.xml
 - **`ccode`**: "code tag for javadoc"

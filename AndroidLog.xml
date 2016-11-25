@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="AndroidLog">
   <template name="logd" value="android.util.Log.d(TAG, &quot;$METHOD_NAME$: $content$&quot;);" description="Log.d(TAG, String)" toReformat="true" toShortenFQNames="true">
     <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="false" />
@@ -59,4 +58,3 @@
     </context>
   </template>
 </templateSet>
-

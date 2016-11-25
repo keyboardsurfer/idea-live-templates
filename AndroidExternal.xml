@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="AndroidExternal">
   <template name="onEventMainThread" value="public void onEventMainThread(final $eventType$ $eventName$) {&#10;&#10;}" description="Adds onMainThreadEvent method for eventbus" toReformat="true" toShortenFQNames="true">
     <variable name="eventType" expression="" defaultValue="" alwaysStopAt="true" />
@@ -44,4 +43,3 @@
     </context>
   </template>
 </templateSet>
-
