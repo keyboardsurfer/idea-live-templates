@@ -116,5 +116,17 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="tag" value="public static final String TAG = $class$.class.getSimpleName();" description="generate TAG" toReformat="true" toShortenFQNames="true">
+    <variable name="class" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
 </templateSet>
 
